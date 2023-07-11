@@ -274,9 +274,297 @@ footer a {
 footer img{
     padding-top: 5px;
 }
-@media screen and (max-width:768px) {
-    .welcome-content h1{
+
+@media screen and (max-width:768px) {                       
+    /* main{
+        margin-left: 40px;
+    } */
+    header {
+        display:block;
+        padding: 10px;
+        background-color: antiquewhite;
+        box-shadow: 0 0 10px grey;
+        /* position:sticky;
+        top: 0px; */
+    
+    }
+    
+    .logo img {
+        width: 20%;
+        display: block;
+    }
+    
+    .navmenu ul {
+        display: flex;
+        margin-top: 10px;
+    }
+    
+    .navmenu li {
+        list-style: none;
+    }
+    
+    .navmenu a {
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+        color: rgb(4, 3, 3);
+        transition: all ease 0.2s;
+    
+    }
+    
+    .navmenu li:last-child {
+        margin-right: 0;
+    
+    }
+    
+    .navmenu a:hover {
         color: red;
     }
     
+    .welcome {
+        height: 600px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .welcome-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    
+    .welcome-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    .welcome-content-hello {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: brown;
+        margin-bottom: 0px;
+    
+    }
+    
+    .welcome-content h1 {
+        font-size: 41px;
+    }
+    span{
+        color: red;
+    }
+    
+    .welcome-content p {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 20px;
+    }
+    
+    .welcome-button {
+        text-decoration: none;
+        color: white;
+        background-color: orangered;
+        padding: 10px 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 50px;
+        margin-right: 10px;
+        display: list-item;
+        margin-top: 20px;
+    }
+    
+    .welcome-button:hover {
+        background-color: green;
+        color: azure;
+    }
+    .faculty-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        border: 2px red solid;
+        padding: 10px;
+    }
+    .faculty {
+        /* font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        margin-bottom: 40px;
+        margin-top: 40px;
+        /* margin-left: 40px;
+        margin-right: 10px; */
+        width: 100%;
+    }
+    
+    .faculty h2,
+    .achievment h2 {
+        color: red;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+    
+    .faculty p,
+    .achievment p {
+        margin-bottom: 30px;
+        text-align: center;
+        color: blue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .faculty-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+        border: 2px red solid;
+        padding: 10px 10px;
+    }
+    
+    .faculty-item img,
+    .achievment-item img {
+        width: 80%;
+        height: 300px;
+        box-shadow: 0 0 10px black;
+        margin-left: 30px;
+    }
+    
+    .faculty-item h3,
+    .achievment-item h3 {
+        text-align: center;
+    }
+    
+    .achievment {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        /* margin-left: 0px;
+        margin-right: 10px; */
+        overflow: hidden;
+    
+    }
+    
+    .achievment-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        overflow-x: scroll;
+        border: 2px blue solid;
+        padding: 10px 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .address {
+        background-color: rgb(1, 1, 35);
+        height: 900px;
+        margin-left: 20px;
+        padding-left: 10px;
+        width: 100%;
+    
+    }
+    
+    .address h1 {
+        color: yellow;
+        text-align: center;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    
+    
+    }
+    
+    .address-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        color: aliceblue;
+    }
+    
+    .address-item h4 {
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: aqua;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .address-item h4 a{
+        font-style: oblique;
+        color: yellow;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+    
+    
+    .address-item ul {
+        list-style-type: none;
+        
+    }
+    .address-item ul li{
+    margin-top: 10px;
+    }
+    
+    .address-item a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact a{
+        display:list-item;
+        margin-top:5px;
+        font-style: oblique;
+        list-style: none;
+        font-size: 20px;
+        
+    }
+    .contact a img{
+        width:40px;
+        height: 40px;
+        margin-left: 10px;
+        margin-right: 5px;
+        background-color: aliceblue;
+        padding: 2px;
+    
+    }
+    
+    footer {
+        text-align: center;
+        font-size: 20px;
+        background-color: black;
+        color: aquamarine;
+        margin-top: 0.5px;
+        height:60px;
+        font-family: sans-serif;
+        padding-bottom: 10px;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 0px;
+        
+    }
+    
+    footer a {
+        text-decoration: none;
+        font-size: 20px;
+        background-color: black;
+        color: aquamarine;
+        margin-left: 5px;
+    }
+    footer img{
+        padding-top: 5px;
+    }
 }
